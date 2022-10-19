@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung_reputation"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/findDriverButton"
+        android:layout_width="137dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="13dp"
+        android:text="Find Driver"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="354dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginTop="238dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="237dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:
+            android:ems="10"
+            android:hint="Type Here"
+            android:inputType="textPersonName"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/driverNameTextView"
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/inpu_bg"
+            android:gravity="center"
+            android:text="Driver's Name:"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="117dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/signUpView"
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="or Sign Up"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/loginTextView"
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="Login"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="443dp"
+        >
+
+        <Button
+            android:id="@+id/reputationList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reputation List"
+            android:layout_weigth="1"/>
+
+        <Button
+            android:id="@+id/stolenBikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reputationList"
+            android:text="Stolen Bikes" />
+
+        <Button
+            android:id="@+id/availableDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/reputationList"
+            android:text="Available Driver" />
+
+        <Button
+            android:id="@+id/addReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/availableDriver"
+            android:layout_toRightOf="@id/stolenBikes"
+            android:text="Add a Review/ Driver" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
