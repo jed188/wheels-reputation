@@ -17,7 +17,7 @@
         android:layout_marginTop="13dp"
         android:text="@string/find_driver"
         android:textColor="@color/black"
-        app:backgroundTint="#FAD053"
+        app:backgroundTint="#FBD04F"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
