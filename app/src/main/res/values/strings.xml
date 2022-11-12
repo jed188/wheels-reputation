@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">WHEEL\'S REPUTATION</string>
+    <string name="stolen_bike">Stolen Bike</string>
+    <string name="driver_reputation">Driver Reputation</string>
+    <string name="driver_s_name">Driver\'s Name:</string>
+    <string name="type_here">Type Here</string>
+    <string name="find_driver">Find Driver</string>
+    <string name="available_driver">Available Driver</string>
 </resources>
