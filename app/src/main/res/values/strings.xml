@@ -6,4 +6,7 @@
     <string name="type_here">Type Here</string>
     <string name="find_driver">Find Driver</string>
     <string name="available_driver">Available Driver</string>
+    <string name="log_out">Log Out</string>
+    <string name="add_a_driver_bike_review">Add a Driver/Bike/Review</string>
+    <string name="username">Username</string>
 </resources>
