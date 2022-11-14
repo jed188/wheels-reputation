@@ -3,12 +3,18 @@ package com.example.wheelsreputation;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+
+
 
 public class MainActivity extends AppCompatActivity {
+
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         setTitle("Drivers Reputation");
+    }
+
+    public void find_driver(View view){
+
+        intent = new Intent(this,Find_driver_activity.class);
+
+        startActivity(intent);
+
     }
 
     public void shareApkFile () {
