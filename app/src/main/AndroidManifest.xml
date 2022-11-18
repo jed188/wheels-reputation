@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WHEELSREPUTATION">
         <activity
+            android:name=".Add_something"
+            android:exported="false" />
+        <activity
+            android:name=".Available_driver_list"
+            android:exported="false" />
+        <activity
+            android:name=".Stolen_bike_list"
+            android:exported="false" />
+        <activity
+            android:name=".Driver_reputation_list"
+            android:exported="false" />
+        <activity
             android:name=".Find_driver_activity"
             android:exported="false" />
         <activity

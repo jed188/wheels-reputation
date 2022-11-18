@@ -60,6 +60,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/linear_layout_main_activity"
         android:layout_width="373dp"
         android:layout_height="93dp"
         android:layout_marginBottom="8dp"
@@ -86,6 +87,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_background"
             android:fontFamily="@font/belleza"
+            android:onClick="driverReputationMethod"
             android:text="@string/driver_reputation"
             android:textColor="#ffffff"
             android:textSize="14sp"
@@ -101,6 +103,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_background"
             android:fontFamily="@font/belleza"
+            android:onClick="stolenBikeMethod"
             android:text="@string/stolen_bike"
             android:textColor="#ffffff"
             android:textStyle="bold"
@@ -116,6 +119,7 @@
             android:layout_weight="1"
             android:background="@drawable/button_background"
             android:fontFamily="@font/belleza"
+            android:onClick="availableDriverMethod"
             android:text="@string/available_driver"
             android:textColor="#ffffff"
             android:textSize="14sp"

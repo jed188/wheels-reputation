@@ -9,19 +9,36 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 
 public class MainActivity extends AppCompatActivity {
 
     Intent intent;
+    LinearLayout linLayout;
+    Button availableDriverButton, stolenBikeButton, driverReputationButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        linLayout = findViewById(R.id.linear_layout_main_activity);
+        availableDriverButton = findViewById(R.id.button_available_driver);
+        stolenBikeButton = findViewById(R.id.button_stolen_bike);
+        driverReputationButton = findViewById(R.id.button_reputation_list);
+
+
         setTitle("Drivers Reputation");
+
+
+
+
+
+        /* <a href="https://www.flaticon.com/free-icons/edit" title="edit icons">Edit icons created by Pixel perfect - Flaticon</a>
+        if you use the writing icon you must refrence the editor in the descriptionof your application as it is set to play store
+         */
     }
 
     public void find_driver(View view){
@@ -31,6 +48,31 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void stolenBikeMethod(View view){
+
+        intent = new Intent(MainActivity.this,Stolen_bike_list.class);
+
+        startActivity(intent);
+
+    }
+
+    public void availableDriverMethod(View view){
+
+        intent = new Intent(MainActivity.this,Available_driver_list.class);
+
+        startActivity(intent);
+
+    }
+
+    public void driverReputationMethod(View view){
+
+        intent = new Intent(MainActivity.this,Driver_reputation_list.class);
+
+        startActivity(intent);
+
+    }
+
 
     public void shareApkFile () {
 
@@ -80,7 +122,13 @@ public class MainActivity extends AppCompatActivity {
             case R.id.add_something:
                 //send to an activity with a compsed window to choose between the 3 toggle options
 
-                return true;
+                intent = new Intent(this,Add_something.class);
+
+                startActivity(intent);
+
+
+
+            return true;
 
             case R.id.logout:
                 //logs the user out
