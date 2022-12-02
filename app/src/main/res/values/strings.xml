@@ -9,4 +9,6 @@
     <string name="log_out">Log Out</string>
     <string name="add_a_driver_bike_review">Add a Driver/Bike/Review</string>
     <string name="username">Username</string>
+    <string name="driver_list">driver_List</string>
+    <string name="driver_list1">driver list</string>
 </resources>
