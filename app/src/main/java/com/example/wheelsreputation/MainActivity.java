@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     Intent intent;
     LinearLayout linLayout;
-    Button availableDriverButton, stolenBikeButton, driverReputationButton;
+    Button stolenBikeButton, driverReputationButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         linLayout = findViewById(R.id.linear_layout_main_activity);
-        availableDriverButton = findViewById(R.id.button_available_driver);
+
         stolenBikeButton = findViewById(R.id.button_stolen_bike);
         driverReputationButton = findViewById(R.id.button_reputation_list);
 
@@ -57,13 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void availableDriverMethod(View view){
-
-        intent = new Intent(MainActivity.this,Available_driver_list.class);
-
-        startActivity(intent);
-
-    }
 
     public void driverReputationMethod(View view){
 

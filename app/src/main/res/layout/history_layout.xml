@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/score_textView"
+        android:id="@+id/score_textView_reputation_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
@@ -15,18 +15,18 @@
         android:layout_marginTop="8dp"
         android:text="7/10"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/rating_textview"
+        app:layout_constraintLeft_toRightOf="@id/rating_textview_reputation_list"
         app:layout_constraintTop_toBottomOf="@+id/history_resume" />
 
     <TextView
-        android:id="@+id/rating_textview"
+        android:id="@+id/rating_textview_reputation_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
         android:layout_marginTop="8dp"
         android:text="Rating: "
-        app:layout_constraintEnd_toStartOf="@+id/score_textView"
+        app:layout_constraintEnd_toStartOf="@+id/score_textView_reputation_list"
         app:layout_constraintTop_toBottomOf="@+id/history_resume" />
 
     <TextView
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/status_textview"
+        android:id="@+id/status_textview_reputation_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
@@ -55,20 +55,25 @@
         app:layout_constraintTop_toBottomOf="@+id/history_resume" />
 
     <TextView
-        android:id="@+id/available_textView"
+        android:id="@+id/available_textView_reputatio_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="Available"
-        app:layout_constraintLeft_toRightOf="@id/status_textview"
+        app:layout_constraintLeft_toRightOf="@id/status_textview_reputation_list"
         app:layout_constraintTop_toBottomOf="@+id/history_resume" />
 
     <View
         android:id="@+id/divider"
         android:layout_width="409dp"
         android:layout_height="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="8dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintTop_toBottomOf="@+id/available_textView"
-        tools:layout_editor_absoluteX="1dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/available_textView_reputatio_list" />
 </androidx.constraintlayout.widget.ConstraintLayout>
