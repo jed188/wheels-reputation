@@ -110,6 +110,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.username:
                 // define the username of the user and set text to his name
 
+                intent = new Intent(this,login_Activity.class);
+
+                startActivity(intent);
+
                 return true;
 
             case R.id.add_something:

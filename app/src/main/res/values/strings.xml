@@ -11,4 +11,6 @@
     <string name="username">Username</string>
     <string name="driver_list">driver_List</string>
     <string name="driver_list1">driver list</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
