@@ -8,16 +8,26 @@
 
 
     <TextView
-        android:id="@+id/driver_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="33dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:text="Driver Surname: omba wandja"
-        app:layout_constraintBottom_toTopOf="@+id/history"
+        android:id="@+id/driver_surname"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:text="Driver Surname:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/driver_name2" />
+
+    <TextView
+        android:id="@+id/driver_surname2_value"
+        android:layout_width="117dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="72dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:text="omba wandja "
+        app:layout_constraintBottom_toTopOf="@+id/history"
+        app:layout_constraintStart_toEndOf="@+id/driver_surname" />
 
     <TextView
         android:id="@+id/history"
@@ -32,19 +42,30 @@
 
     <TextView
         android:id="@+id/driver_name2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
-        android:text="Driver Name: Alex"
+        android:text="Driver Name:"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/driver_name3"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="Alex"
+        app:layout_constraintStart_toEndOf="@+id/driver_name2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/driver_imageView"
-        android:layout_width="112dp"
-        android:layout_height="92dp"
+        android:layout_width="132dp"
+        android:layout_height="142dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginTop="24dp"
@@ -55,8 +76,9 @@
     <TextView
         android:id="@+id/overall_rating"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="8dp"
+        android:padding="9dp"
         android:text="Overall rating:"
         app:layout_constraintEnd_toStartOf="@+id/rating_value"
         app:layout_constraintTop_toBottomOf="@+id/driver_imageView" />
@@ -64,7 +86,7 @@
     <TextView
         android:id="@+id/rating_value"
         android:layout_width="28dp"
-        android:layout_height="19dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="26dp"
         android:layout_marginRight="26dp"
         android:layout_marginTop="8dp"
@@ -75,13 +97,13 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView_driver_stories"
-        android:layout_width="351dp"
-        android:layout_height="418dp"
+        android:layout_width="363dp"
+        android:layout_height="267dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/overall_rating" />
@@ -94,6 +116,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:clickable="true"
+        app:backgroundTint="?attr/colorError"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_action_name" />
