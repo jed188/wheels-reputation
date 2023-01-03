@@ -5,6 +5,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerView.Adapter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -15,7 +16,7 @@ import java.util.List;
 public class Find_driver_activity extends AppCompatActivity {
 
 
-    List<driver_history_class> driver_history_classList = new ArrayList<>();
+    List<driver_history_class> driver_history_classList ;
 
     RecyclerView recyclerView;
 
@@ -23,7 +24,9 @@ public class Find_driver_activity extends AppCompatActivity {
 
     RecyclerView.LayoutManager layoutManager;
 
+    //global_variable globalVariable = (global_variable) this.getApplication();
 
+    Intent intent = getIntent();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +35,11 @@ public class Find_driver_activity extends AppCompatActivity {
 
         setTitle("Drivers Reputation");
 
-        fillDriverHistoryList();
+      //  String driverName = intent.getStringExtra("value");
+
+
+
+        driver_history_classList = global_variable.getDriver_history_classList();
 
         recyclerView = findViewById(R.id.recyclerView_driver_stories);
 
@@ -49,14 +56,5 @@ public class Find_driver_activity extends AppCompatActivity {
 
     }
 
-    private void fillDriverHistoryList() {
 
-        driver_history_class history1 = new driver_history_class("he was a good driver","available",8);
-        driver_history_class history2 = new driver_history_class("he stole my bike and didnt pay","available",1);
-        driver_history_class history3 = new driver_history_class("we started well and later he missed payments and i had to fire him","available",6);
-        driver_history_class history4 = new driver_history_class("he was a good driver and my bike broke then he found another bike to drive","available",8);
-
-        driver_history_classList.addAll(Arrays.asList(history1,history2,history3,history4));
-
-    }
 }

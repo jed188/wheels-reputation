@@ -97,8 +97,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView_driver_stories"
-        android:layout_width="363dp"
-        android:layout_height="267dp"
+        android:layout_width="385dp"
+        android:layout_height="317dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"

@@ -1,6 +1,7 @@
 package com.example.wheelsreputation;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 
@@ -43,6 +45,17 @@ public class MyAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter
 
         holder.score_textView_reputation_list.setText(String.valueOf(driver_history_classList.get(position).getRating()));
 
+        holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(context,detailed_history.class);
+
+                context.startActivity(intent);
+
+            }
+        });
+
     }
 
     @Override
@@ -58,6 +71,7 @@ public class MyAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter
 
         TextView score_textView_reputation_list;
 
+        ConstraintLayout constraintLayout;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -67,6 +81,8 @@ public class MyAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter
             available_textView_reputation_list = itemView.findViewById(R.id.available_textView_reputatio_list);
 
             score_textView_reputation_list = itemView.findViewById(R.id.score_textView_reputation_list);
+
+            constraintLayout = itemView.findViewById(R.id.history_constraintLayout);
 
         }
     }

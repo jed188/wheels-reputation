@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        linLayout = findViewById(R.id.linear_layout_main_activity);
+
 
         stolenBikeButton = findViewById(R.id.button_stolen_bike);
         driverReputationButton = findViewById(R.id.button_reputation_list);
