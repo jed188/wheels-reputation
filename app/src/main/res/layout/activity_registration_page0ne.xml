@@ -55,7 +55,8 @@
         android:layout_marginBottom="48dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
-        android:text="Finish and Save"
+        android:text="next"
+        android:onClick="next_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
