@@ -7,8 +7,19 @@
     tools:context=".owner_login_Fragment">
 
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="409dp"
+        android:layout_height="601dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/background_login_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/login_button1"
         android:layout_width="83dp"
         android:layout_height="50dp"
         android:layout_marginBottom="253dp"
@@ -16,12 +27,13 @@
         android:layout_marginStart="219dp"
         android:layout_marginTop="32dp"
         android:text="Log In"
+        android:onClick="log_In"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1" />
 
     <EditText
-        android:id="@+id/username_editTextTextPersonName2"
+        android:id="@+id/username_editTextTextPersonName21"
         android:layout_width="235dp"
         android:layout_height="48dp"
         android:layout_marginEnd="56dp"
@@ -36,7 +48,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextTextPassword1"
         android:layout_width="235dp"
         android:layout_height="48dp"
         android:layout_marginEnd="56dp"
@@ -48,23 +60,12 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/password_textview2"
-        app:layout_constraintTop_toBottomOf="@+id/username_editTextTextPersonName2" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="406dp"
-        android:layout_height="513dp"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/background_login_screen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/username_editTextTextPersonName21" />
 
     <TextView
         android:id="@+id/username_textview"
-        android:layout_width="80dp"
-        android:layout_height="34dp"
+        android:layout_width="97dp"
+        android:layout_height="35dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="8dp"
@@ -72,14 +73,15 @@
         android:layout_marginTop="212dp"
         android:padding="5dp"
         android:text="Username:"
-        app:layout_constraintEnd_toStartOf="@+id/username_editTextTextPersonName2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/username_editTextTextPersonName21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/password_textview2"
-        android:layout_width="80dp"
-        android:layout_height="34dp"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="8dp"
@@ -87,22 +89,24 @@
         android:layout_marginTop="24dp"
         android:padding="5dp"
         android:text="Password:"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username_textview" />
 
     <TextView
-        android:id="@+id/register_textView6"
-        android:layout_width="86dp"
-        android:layout_height="36dp"
+        android:id="@+id/register_textView61"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginTop="18dp"
         android:padding="8dp"
         android:text="or Register"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/login_button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintStart_toEndOf="@+id/login_button1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1" />
 
     <TextView
         android:id="@+id/textView"

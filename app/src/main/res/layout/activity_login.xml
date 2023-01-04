@@ -19,12 +19,12 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_pager1"
             android:layout_width="match_parent"
-            android:layout_height="529dp" />
+            android:layout_height="609dp" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="66dp"
             app:tabGravity="fill"
             app:tabIndicator="@drawable/background_login_screen"
             app:tabIndicatorAnimationMode="elastic"
