@@ -25,6 +25,7 @@
             app:tabGravity="fill"
             app:tabIndicator="@drawable/tab_indicator_top"
             app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorColor="#FFEBAF"
             app:tabIndicatorGravity="stretch"
             app:tabMode="fixed"
             app:tabSelectedTextColor="@color/white">
@@ -48,7 +49,7 @@
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/view_Pager2"
             android:layout_width="match_parent"
-            android:layout_height="560dp"
+            android:layout_height="match_parent"
             android:layout_marginBottom="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
