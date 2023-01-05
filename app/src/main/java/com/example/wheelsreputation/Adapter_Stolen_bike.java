@@ -64,14 +64,14 @@ public class Adapter_Stolen_bike extends RecyclerView.Adapter<Adapter_Stolen_bik
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            vehiculeType = itemView.findViewById(R.id.vehicule_type_value_stolen_bike_textView3);
-            make = itemView.findViewById(R.id.vehicule_make_value_textView14);
-            model = itemView.findViewById(R.id.vehicule_type_value_textView15);
-            OwnerName = itemView.findViewById(R.id.owner_name_value_textView);
-            cellphone = itemView.findViewById(R.id.contact_number_value_textView);
-            driverName = itemView.findViewById(R.id.driver_name_value_stolen_bike_textView2);
-            plateNumber = itemView.findViewById(R.id.plate_number_value_stolen_bike_textView);
-            note = itemView.findViewById(R.id.editTextTextMultiLine);
+            vehiculeType = itemView.findViewById(R.id.vehicule_type_value_stolen_bike_textView3_add_stolen_bike);
+            make = itemView.findViewById(R.id.vehicule_make_value_textView14_add_stolen_bike);
+            model = itemView.findViewById(R.id.vehicule_type_value_textView15_add_stolen_bike);
+            OwnerName = itemView.findViewById(R.id.owner_name_value_textView_add_stolen_bike);
+            cellphone = itemView.findViewById(R.id.contact_number_value_textView_add_stolen_bike);
+            driverName = itemView.findViewById(R.id.driver_name_value_stolen_bike_textView2_add_stolen_bike);
+            plateNumber = itemView.findViewById(R.id.plate_number_value_stolen_bike_textView_add_stolen_bike);
+            note = itemView.findViewById(R.id.editTextTextMultiLine_add_stolen_bike);
         }
     }
 }
