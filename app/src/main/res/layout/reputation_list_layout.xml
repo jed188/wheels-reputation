@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout_reputation_list"
     android:layout_width="match_parent"
+    android:background="#C7EFEA"
     android:layout_height="wrap_content">
 
     <TextView

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_login_screen"
     tools:context=".Find_driver_activity">
 
 
@@ -14,6 +15,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="22dp"
+
         android:text="Driver Surname:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/driver_name2" />
@@ -36,6 +38,8 @@
         android:layout_marginBottom="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
         android:text="History:"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView_driver_stories"
         app:layout_constraintStart_toStartOf="parent" />
@@ -79,6 +83,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="8dp"
         android:padding="9dp"
+        android:textSize="16sp"
         android:text="Overall rating:"
         app:layout_constraintEnd_toStartOf="@+id/rating_value"
         app:layout_constraintTop_toBottomOf="@+id/driver_imageView" />
@@ -91,6 +96,7 @@
         android:layout_marginRight="26dp"
         android:layout_marginTop="8dp"
         android:gravity="center"
+        android:textSize="16sp"
         android:text="8.5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/driver_imageView" />
