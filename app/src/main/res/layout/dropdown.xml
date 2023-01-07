@@ -6,6 +6,7 @@
     android:textColor="#000"
     android:textStyle="bold"
     android:textSize="16sp"
+    android:background="#E3E0E0"
     android:theme="@style/Theme.MaterialComponents"
 
     xmlns:android="http://schemas.android.com/apk/res/android" />

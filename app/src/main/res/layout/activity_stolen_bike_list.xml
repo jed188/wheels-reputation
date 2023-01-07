@@ -21,16 +21,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/add_stolen_bike_button"
-        android:layout_width="61dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="48dp"
-        android:layout_marginEnd="38dp"
-        android:layout_marginRight="38dp"
-        android:background="@drawable/add_something_button"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_action_name" />
+        app:srcCompat="@drawable/ic_baseline_playlist_add_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

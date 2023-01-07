@@ -1,14 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E2FAF4"
     tools:context=".add_something_review_Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/rating_textView2"
+        android:layout_width="85dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Driver Rating:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vehicule_model_textView3" />
 
-</FrameLayout>
+    <EditText
+        android:id="@+id/rating_value_textView2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:text="7"
+        app:layout_constraintStart_toEndOf="@+id/rating_textView2"
+        app:layout_constraintTop_toBottomOf="@+id/vehicule_make_value_textView14_add_stolen_bike2" />
+
+    <EditText
+        android:id="@+id/vehicule_type_value_textView3"
+        android:layout_width="101dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:text="Bike"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/vehicule_make_textView2"
+        app:layout_constraintTop_toBottomOf="@+id/end_service_value_textView3" />
+
+    <TextView
+        android:id="@+id/vehicule_make_textView2"
+        android:layout_width="102dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Vehicule Make:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/end_service_textView2" />
+
+    <EditText
+        android:id="@+id/vehicule_make_value_textView14_add_stolen_bike2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:minHeight="48dp"
+        android:text="Big Boy"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/vehicule_model_textView3"
+        app:layout_constraintTop_toBottomOf="@+id/vehicule_type_value_textView3" />
+
+    <TextView
+        android:id="@+id/vehicule_model_textView3"
+        android:layout_width="104dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Vehicule Model:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vehicule_make_textView2" />
+
+    <EditText
+        android:id="@+id/owner_name_value_textView_add_stolen_bike2"
+        android:layout_width="148dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:text="Jedidia"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/driver_name_textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/driver_name_textView2"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Driver Name: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/beginning_service_textView3"
+        android:layout_width="138dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="18dp"
+        android:text="Beginning of service:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surname_driver_textView2" />
+
+    <TextView
+        android:id="@+id/end_service_textView2"
+        android:layout_width="127dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="End of service:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beginning_service_textView3" />
+
+    <EditText
+        android:id="@+id/end_service_value_textView3"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:text="23/03/2023"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/end_service_textView2"
+        app:layout_constraintTop_toBottomOf="@+id/beginning_service_value_textView3" />
+
+    <TextView
+        android:id="@+id/surname_driver_textView2"
+        android:layout_width="108dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Driver Surname:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/driver_name_textView2" />
+
+    <EditText
+        android:id="@+id/contact_number_value_textView_add_stolen_bike2"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:text="kingolo"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/surname_driver_textView2"
+        app:layout_constraintTop_toBottomOf="@+id/owner_name_value_textView_add_stolen_bike2" />
+
+    <EditText
+        android:id="@+id/beginning_service_value_textView3"
+        android:layout_width="127dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="1dp"
+        android:text="06/12/2023"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/beginning_service_textView3"
+        app:layout_constraintTop_toBottomOf="@+id/contact_number_value_textView_add_stolen_bike2" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="FIll in your details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="352dp"
+        android:layout_height="93dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/description_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="type your review here"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating_value_textView2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Confirm Driver "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
