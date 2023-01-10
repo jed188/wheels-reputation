@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable-anydpi/ic_action_name.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19722222222222222" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/add_something_button.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/background1.xml" value="0.18" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/background_detailed_history.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/background_driver_login_screen.xml" value="0.2" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/background_login_screen.xml" value="0.2203125" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/background_resource.xml" value="0.19722222222222222" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/button_background.xml" value="0.1935185185185185" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/button_view.xml" value="0.2203125" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/description_background.xml" value="0.2203125" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/fragment_driver_login.xml" value="0.2203125" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.18611111111111112" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/ic_baseline_cached_24.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/ic_baseline_person_add_alt_1_24.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/ic_baseline_playlist_add_24.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19722222222222222" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/inpu_bg.xml" value="0.2203125" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/input_background_1.xml" value="0.1" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/tab_indicator_top.xml" value="0.2203125" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_add_something.xml" value="0.16" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_available_driver_list.xml" value="0.67" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_detailed_history.xml" value="0.25" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_driver_reputation_list.xml" value="0.22" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_find_driver.xml" value="0.25" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_registration_page0ne.xml" value="0.25" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_registration_screen2.xml" value="0.22" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_stolen_bike_list.xml" value="0.22" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/detail_history_layout.xml" value="0.25" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/dropdown.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/fragment_add_something_driver_.xml" value="0.33" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/fragment_add_something_review_.xml" value="0.25" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/fragment_add_something_stolen_bike_.xml" value="0.33" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/fragment_driver_login_.xml" value="0.25" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/fragment_first.xml" value="0.25" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/fragment_owner_login_.xml" value="0.25" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/history_layout.xml" value="0.33" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/linear_layout_options.xml" value="0.33" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/reputation_list_layout.xml" value="0.33" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/stolen_bike_layout.xml" value="0.33" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/menu/menu_first_page.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

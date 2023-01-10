@@ -5,44 +5,45 @@
     android:id="@+id/available_driver_recyclerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".login_Activity">
 
-    <LinearLayout
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:tabGravity="fill"
+        app:tabIndicator="@drawable/background_driver_login_screen"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorGravity="stretch"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/white">
 
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/view_pager1"
-            android:layout_width="match_parent"
-            android:layout_height="609dp" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner" />
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            app:tabGravity="fill"
-            app:tabIndicator="@drawable/background_login_screen"
-            app:tabIndicatorAnimationMode="elastic"
-            app:tabIndicatorGravity="stretch"
-            app:tabMode="fixed"
-            app:tabSelectedTextColor="@color/white">
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="driver" />
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Owner" />
+    </com.google.android.material.tabs.TabLayout>
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="driver" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
 
-        </com.google.android.material.tabs.TabLayout>
-    </LinearLayout>
+        app:layout_constraintBottom_toTopOf="@+id/tab_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,33 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_login_screen"
     tools:context=".owner_login_Fragment">
 
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="409dp"
-        android:layout_height="601dp"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/background_login_screen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/login_button1"
-        android:layout_width="83dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="253dp"
-        android:layout_marginLeft="219dp"
-        android:layout_marginStart="219dp"
-        android:layout_marginTop="32dp"
-        android:text="Log In"
-        android:onClick="log_In"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1" />
 
     <EditText
         android:id="@+id/username_editTextTextPersonName21"
@@ -96,17 +72,33 @@
 
     <TextView
         android:id="@+id/register_textView61"
-        android:layout_width="99dp"
+        android:layout_width="0dp"
         android:layout_height="39dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="20dp"
         android:padding="8dp"
         android:text="or Register"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/login_button1"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1" />
+
+    <Button
+        android:id="@+id/login_button1"
+        android:layout_width="83dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="253dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="32dp"
+        android:onClick="log_In"
+        android:text="Log In"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1"
+        app:layout_constraintVertical_bias="0.414" />
 
     <TextView
         android:id="@+id/textView"

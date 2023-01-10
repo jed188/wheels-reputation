@@ -4,26 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fragment_driver_login"
     tools:context=".driver_login_Fragment">
-
-    <ImageView
-        android:id="@+id/imageView20"
-        android:layout_width="409dp"
-        android:layout_height="601dp"
-        android:layout_marginTop="4dp"
-        android:src="@drawable/fragment_driver_login"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/login_button1"
         android:layout_width="83dp"
         android:layout_height="50dp"
         android:layout_marginBottom="253dp"
-        android:layout_marginLeft="219dp"
-        android:layout_marginStart="219dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginStart="204dp"
         android:layout_marginTop="32dp"
         android:text="Log In"
         app:layout_constraintBottom_toBottomOf="parent"

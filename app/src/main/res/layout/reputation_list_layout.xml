@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout_reputation_list"
     android:layout_width="match_parent"
-    android:background="#C7EFEA"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#C7EFEA">
 
     <TextView
         android:id="@+id/driver_name_textView2_reputation_list"
@@ -49,20 +49,6 @@
         android:layout_marginTop="16dp"
         android:text="Available"
         app:layout_constraintEnd_toStartOf="@+id/rating_textview_reputation_list"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/status_textview_reputation_list"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/status_textview_reputation_list"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:text="Status:"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/available_textView_reputatio_list"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/driver_name_textView2_reputation_list"
         app:layout_constraintTop_toTopOf="parent" />
