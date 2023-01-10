@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/history_constraintLayout"
     android:layout_width="match_parent"
-    android:background="#E2EFE6"
+    android:background="#F6EB84"
     android:layout_height="wrap_content">
 
     <TextView

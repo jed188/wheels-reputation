@@ -31,13 +31,13 @@
             android:name=".Stolen_bike_list"
             android:exported="false" />
         <activity
-            android:name=".Driver_reputation_list"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".Find_driver_activity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Driver_reputation_list"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

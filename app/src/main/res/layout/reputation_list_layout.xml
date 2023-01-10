@@ -5,7 +5,7 @@
     android:id="@+id/constraintLayout_reputation_list"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#C7EFEA">
+    android:background="@drawable/background_driver_login_screen">
 
     <TextView
         android:id="@+id/driver_name_textView2_reputation_list"

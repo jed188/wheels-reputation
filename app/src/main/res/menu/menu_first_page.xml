@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
-    android:id="@+id/username"
-    android:title="@string/username" />
+        android:id="@+id/username"
+        android:title="@string/username" />
     <item
         android:id="@+id/add_something"
         android:title="@string/add_a_driver_bike_review" />
     <item
         android:id="@+id/logout"
         android:title="@string/log_out" />
+    <item
+
+        android:title="Search"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="ifRoom" />
 
 
 </menu>
