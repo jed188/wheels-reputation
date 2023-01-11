@@ -25,6 +25,7 @@
         android:layout_marginLeft="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
+        android:hint="click to upload image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine_add_stolen_bike"
         app:srcCompat="@drawable/ic_action_name" />
@@ -33,10 +34,10 @@
         android:id="@+id/contact_number_value_textView_add_stolen_bike"
         android:layout_width="141dp"
         android:layout_height="48dp"
+        android:hint="Number"
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="0834373761"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/contact_number_textView5"
         app:layout_constraintTop_toBottomOf="@+id/owner_name_value_textView_add_stolen_bike" />
@@ -60,7 +61,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="CV233005"
+        android:hint="Plate Number"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/plate_number_stolen_bike_textView"
         app:layout_constraintTop_toBottomOf="@+id/driver_name_value_stolen_bike_textView2_add_stolen_bike"
@@ -73,7 +74,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="superlight 150"
+        android:hint="Model Name"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/vehicule_model_textView"
         app:layout_constraintTop_toBottomOf="@+id/vehicule_make_value_textView14_add_stolen_bike"
@@ -134,7 +135,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
-        android:text="Jedidia"
+        android:hint="Name"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/owner_name_textView"
         app:layout_constraintTop_toBottomOf="@+id/vehicule_type_value_textView15_add_stolen_bike" />
@@ -158,8 +159,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Big Boy"
-
+        android:hint="Bike Make"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/vehicule_make_textView6"
         app:layout_constraintTop_toBottomOf="@+id/vehicule_type_textView16" />
@@ -213,7 +213,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Amos"
+        android:hint="Driver Name"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/driver_name_stolen_bike_textView2"
         app:layout_constraintTop_toBottomOf="@+id/contact_number_value_textView_add_stolen_bike" />

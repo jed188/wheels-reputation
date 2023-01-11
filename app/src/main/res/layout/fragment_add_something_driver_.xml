@@ -33,7 +33,7 @@
         android:layout_marginTop="14dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Surname"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/name_add_driver" />
@@ -47,7 +47,7 @@
         android:layout_marginTop="31dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView4_add_driver" />
@@ -97,7 +97,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Area"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/delivery_app_add_driver" />
@@ -111,7 +111,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Driving Years"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/cellphone_add_driver" />
@@ -148,7 +148,7 @@
         android:layout_marginRight="80dp"
         android:layout_marginTop="18dp"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="0731234567"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/surname_add_driver" />
@@ -161,7 +161,7 @@
         android:layout_marginRight="13dp"
         android:layout_marginTop="8dp"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Uber, Mr D"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/years_experience_add_driver" />
