@@ -40,42 +40,36 @@
 
     <TextView
         android:id="@+id/username_textview"
-        android:layout_width="97dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="212dp"
         android:padding="5dp"
         android:text="Username:"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/username_editTextTextPersonName21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/password_textview2"
-        android:layout_width="100dp"
+        android:layout_width="0dp"
         android:layout_height="32dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:padding="5dp"
         android:text="Password:"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username_textview" />
 
     <TextView
         android:id="@+id/register_textView61"
         android:layout_width="0dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:layout_marginTop="20dp"
         android:padding="8dp"
         android:text="or Register"
@@ -88,17 +82,14 @@
     <Button
         android:id="@+id/login_button1"
         android:layout_width="83dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="253dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="184dp"
         android:layout_marginStart="184dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="18dp"
         android:onClick="log_In"
         android:text="Log In"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1"
-        app:layout_constraintVertical_bias="0.414" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword1" />
 
     <TextView
         android:id="@+id/textView"

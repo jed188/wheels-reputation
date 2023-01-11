@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E2FAF4"
+    android:background="#DCA5D88F"
     tools:context=".add_something_review_Fragment">
 
     <TextView
         android:id="@+id/rating_textView2"
-        android:layout_width="85dp"
-        android:layout_height="29dp"
+        android:layout_width="115dp"
+        android:layout_height="0dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Driver Rating:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vehicule_model_textView3" />
@@ -39,14 +39,14 @@
 
     <TextView
         android:id="@+id/vehicule_make_textView2"
-        android:layout_width="102dp"
-        android:layout_height="25dp"
+        android:layout_width="132dp"
+        android:layout_height="0dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:text="Vehicule Make:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/end_service_textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/end_service_value_textView3" />
 
     <EditText
         android:id="@+id/vehicule_make_value_textView14_add_stolen_bike2"
@@ -61,11 +61,11 @@
 
     <TextView
         android:id="@+id/vehicule_model_textView3"
-        android:layout_width="104dp"
-        android:layout_height="32dp"
+        android:layout_width="134dp"
+        android:layout_height="0dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="35dp"
         android:text="Vehicule Model:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vehicule_make_textView2" />
@@ -82,19 +82,19 @@
 
     <TextView
         android:id="@+id/driver_name_textView2"
-        android:layout_width="89dp"
-        android:layout_height="31dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="28dp"
         android:text="Driver Name: "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/beginning_service_textView3"
-        android:layout_width="138dp"
-        android:layout_height="30dp"
+        android:layout_width="158dp"
+        android:layout_height="0dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="18dp"
@@ -105,10 +105,10 @@
     <TextView
         android:id="@+id/end_service_textView2"
         android:layout_width="127dp"
-        android:layout_height="26dp"
+        android:layout_height="0dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:text="End of service:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/beginning_service_textView3" />
@@ -125,7 +125,7 @@
 
     <TextView
         android:id="@+id/surname_driver_textView2"
-        android:layout_width="108dp"
+        android:layout_width="0dp"
         android:layout_height="33dp"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
@@ -177,7 +177,7 @@
         android:layout_height="93dp"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/description_background"
         android:ems="10"
         android:gravity="start|top"
