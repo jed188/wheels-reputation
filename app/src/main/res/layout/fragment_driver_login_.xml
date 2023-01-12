@@ -9,10 +9,10 @@
 
     <Button
         android:id="@+id/login_button1"
-        android:layout_width="83dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="204dp"
-        android:layout_marginStart="204dp"
+        android:layout_marginLeft="195dp"
+        android:layout_marginStart="195dp"
         android:layout_marginTop="18dp"
         android:text="Log In"
         app:layout_constraintStart_toStartOf="parent"

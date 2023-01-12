@@ -18,12 +18,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vehicule_model_textView3" />
 
-    <EditText
+
+    <RatingBar
         android:id="@+id/rating_value_textView2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="4dp"
-        android:text="7"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="80dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:clickable="true"
+        android:isIndicator="false"
+        android:numStars="5"
+        android:progressTint="#CDBB55FF"
+        android:rating="3.0"
+        android:stepSize="0.5"
         app:layout_constraintStart_toEndOf="@+id/rating_textView2"
         app:layout_constraintTop_toBottomOf="@+id/vehicule_make_value_textView14_add_stolen_bike2" />
 
@@ -32,7 +43,7 @@
         android:layout_width="101dp"
         android:layout_height="48dp"
         android:layout_marginTop="1dp"
-        android:text="Bike"
+        android:hint="Bike"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/vehicule_make_textView2"
         app:layout_constraintTop_toBottomOf="@+id/end_service_value_textView3" />
@@ -54,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:minHeight="48dp"
-        android:text="Big Boy"
+        android:hint="Big Boy"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/vehicule_model_textView3"
         app:layout_constraintTop_toBottomOf="@+id/vehicule_type_value_textView3" />
@@ -75,7 +86,7 @@
         android:layout_width="148dp"
         android:layout_height="48dp"
         android:layout_marginTop="18dp"
-        android:text="Jedidia"
+        android:hint="Name"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/driver_name_textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -118,7 +129,7 @@
         android:layout_width="130dp"
         android:layout_height="48dp"
         android:layout_marginTop="1dp"
-        android:text="23/03/2023"
+        android:hint="23/03/2023"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/end_service_textView2"
         app:layout_constraintTop_toBottomOf="@+id/beginning_service_value_textView3" />
@@ -139,7 +150,7 @@
         android:layout_width="146dp"
         android:layout_height="48dp"
         android:layout_marginTop="4dp"
-        android:text="kingolo"
+        android:hint="Surname"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/surname_driver_textView2"
         app:layout_constraintTop_toBottomOf="@+id/owner_name_value_textView_add_stolen_bike2" />
@@ -149,7 +160,7 @@
         android:layout_width="127dp"
         android:layout_height="48dp"
         android:layout_marginTop="1dp"
-        android:text="06/12/2023"
+        android:hint="06/12/2023"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/beginning_service_textView3"
         app:layout_constraintTop_toBottomOf="@+id/contact_number_value_textView_add_stolen_bike2" />
