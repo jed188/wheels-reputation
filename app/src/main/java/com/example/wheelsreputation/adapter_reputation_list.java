@@ -41,9 +41,6 @@ public class adapter_reputation_list extends androidx.recyclerview.widget.Recycl
 
         holder.driver_name_textView2_reputation_list.setText(driver_history_classList.get(position).getDriverName());
 
-        holder.available_textView_reputatio_list.setText(driver_history_classList.get(position).getAvailability());
-
-        holder.score_textView_reputation_list.setText(String.valueOf(driver_history_classList.get(position).getRating()));
 
 
 
@@ -70,9 +67,6 @@ public class adapter_reputation_list extends androidx.recyclerview.widget.Recycl
 
         TextView driver_name_textView2_reputation_list;
 
-        TextView available_textView_reputatio_list;
-
-        TextView score_textView_reputation_list;
 
         ConstraintLayout constraintLayout_reputation_list;
 
@@ -80,9 +74,6 @@ public class adapter_reputation_list extends androidx.recyclerview.widget.Recycl
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            score_textView_reputation_list = itemView.findViewById(R.id.score_textView_reputation_list);
-
-            available_textView_reputatio_list = itemView.findViewById(R.id.available_textView_reputatio_list);
 
             driver_name_textView2_reputation_list = itemView.findViewById(R.id.driver_name_textView2_reputation_list);
 

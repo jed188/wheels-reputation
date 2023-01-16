@@ -12,6 +12,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.List;
 
 public class Driver_reputation_list extends AppCompatActivity {
@@ -23,6 +25,8 @@ public class Driver_reputation_list extends AppCompatActivity {
     RecyclerView.Adapter mAdapterReputation;
 
     RecyclerView.LayoutManager layoutManagerReputation;
+
+    FloatingActionButton add_driver;
 
     Intent intent;
 
@@ -49,11 +53,33 @@ public class Driver_reputation_list extends AppCompatActivity {
 
         recyclerReputation.setAdapter(mAdapterReputation);
 
+        add_driver = findViewById(R.id.floatingActionButton2);
+
+        add_driver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                intent = new Intent(getApplicationContext() , Add_something.class);
+
+                startActivity(intent);
+            }
+        });
+
     }
 
     public void stolenBikeMethod(View view){
 
         intent = new Intent(this , Stolen_bike_list.class);
+
+        startActivity(intent);
+
+    }
+
+
+
+    public void find_driver(View view){
+
+        intent = new Intent(this , MainActivity.class);
 
         startActivity(intent);
 

@@ -8,6 +8,9 @@ import androidx.recyclerview.widget.RecyclerView.Adapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,6 +30,8 @@ public class Find_driver_activity extends AppCompatActivity {
     //global_variable globalVariable = (global_variable) this.getApplication();
 
     Intent intent = getIntent();
+
+    FloatingActionButton add_review;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +57,18 @@ public class Find_driver_activity extends AppCompatActivity {
         mAdapter = new MyAdapter(driver_history_classList,this);
 
         recyclerView.setAdapter(mAdapter);
+
+        add_review = findViewById(R.id.floatingActionButton);
+
+        add_review.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext() , Add_something.class);
+
+                startActivity(intent);
+            }
+        });
 
 
     }

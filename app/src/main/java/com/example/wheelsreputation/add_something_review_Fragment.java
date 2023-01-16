@@ -41,6 +41,7 @@ public class add_something_review_Fragment extends Fragment {
                 if(motionEvent.getAction() == MotionEvent.ACTION_MOVE){
 
                     ratingBar.getRating();
+                    ratingBar.animate().scaleX(1.5f).scaleY(1.5f);
 
                 }
 
