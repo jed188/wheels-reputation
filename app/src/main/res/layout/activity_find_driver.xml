@@ -38,9 +38,9 @@
         android:layout_marginBottom="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="italic"
-        android:text="History:"
+        android:text="Driver History:"
         app:layout_constraintBottom_toTopOf="@+id/recyclerView_driver_stories"
         app:layout_constraintStart_toStartOf="parent" />
 

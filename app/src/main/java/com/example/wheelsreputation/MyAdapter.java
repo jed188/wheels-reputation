@@ -39,11 +39,7 @@ public class MyAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder , int position) {
 
-        holder.available_textView_reputation_list.setText(driver_history_classList.get(position).getAvailability());
-
         holder.history_resume.setText(driver_history_classList.get(position).getDescription());
-
-        holder.score_textView_reputation_list.setText(String.valueOf(driver_history_classList.get(position).getRating()));
 
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,20 +63,12 @@ public class MyAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter
 
         TextView history_resume;
 
-        TextView available_textView_reputation_list;
-
-        TextView score_textView_reputation_list;
-
         ConstraintLayout constraintLayout;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             history_resume = itemView.findViewById(R.id.history_resume);
-
-            available_textView_reputation_list = itemView.findViewById(R.id.available_textView_reputatio_list);
-
-            score_textView_reputation_list = itemView.findViewById(R.id.score_textView_reputation_list);
 
             constraintLayout = itemView.findViewById(R.id.history_constraintLayout);
 

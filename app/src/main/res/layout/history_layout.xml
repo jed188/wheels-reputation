@@ -4,65 +4,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/history_constraintLayout"
     android:layout_width="match_parent"
-    android:background="#83DD80"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@drawable/detailed_history_list_shape">
 
-    <TextView
-        android:id="@+id/score_textView_reputation_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginRight="48dp"
-        android:layout_marginTop="8dp"
-        android:text="7/10"
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="32dp"
+        android:progressTint="#CDBB55FF"
+        android:rating="3.0"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/rating_textview_reputation_list"
         app:layout_constraintTop_toBottomOf="@+id/history_resume" />
 
     <TextView
-        android:id="@+id/rating_textview_reputation_list"
+        android:id="@+id/contact_number_value_textView_add_stolen_bike3"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0834373761"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/contact_number_textView2"
+        app:layout_constraintTop_toBottomOf="@+id/owner_name_value_textView_add_stolen_bike3" />
+
+    <TextView
+        android:id="@+id/beginning_service_textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="from:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact_number_textView2" />
+
+    <TextView
+        android:id="@+id/owner_name_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Owner Name: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history_resume" />
+
+    <TextView
+        android:id="@+id/owner_name_value_textView_add_stolen_bike3"
+        android:layout_width="0dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+        android:text="Jedidia"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/owner_name_textView2"
+        app:layout_constraintTop_toBottomOf="@+id/history_resume" />
+
+    <TextView
+        android:id="@+id/end_service_value_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="23/03/2023"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/beginning_service_textView4"
+        app:layout_constraintTop_toBottomOf="@+id/contact_number_textView2" />
+
+    <TextView
+        android:id="@+id/contact_number_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Contact number:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/owner_name_textView2" />
+
+    <TextView
+        android:id="@+id/beginning_service_value_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:text="06/12/2023"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar3" />
+
+    <TextView
+        android:id="@+id/end_service_textView4"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
         android:layout_marginEnd="1dp"
         android:layout_marginRight="1dp"
-        android:layout_marginTop="8dp"
-        android:text="Rating: "
-        app:layout_constraintEnd_toStartOf="@+id/score_textView_reputation_list"
-        app:layout_constraintTop_toBottomOf="@+id/history_resume" />
+        android:layout_marginTop="20dp"
+        android:text="to:"
+        app:layout_constraintEnd_toStartOf="@+id/beginning_service_value_textView4"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar3" />
 
     <TextView
         android:id="@+id/history_resume"
         android:layout_width="362dp"
-        android:layout_height="39dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
+        android:textStyle="italic"
         android:text="he was a good driver and only left because thebike broke and we couldnt fix timeously"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/status_textview_reputation_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="8dp"
-        android:text="Status: "
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/history_resume" />
-
-    <TextView
-        android:id="@+id/available_textView_reputatio_list"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Available"
-        app:layout_constraintLeft_toRightOf="@id/status_textview_reputation_list"
-        app:layout_constraintTop_toBottomOf="@+id/history_resume" />
 
     <View
         android:id="@+id/divider"
@@ -72,9 +133,10 @@
         android:layout_marginLeft="1dp"
         android:layout_marginRight="1dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/available_textView_reputatio_list" />
+        app:layout_constraintTop_toBottomOf="@+id/end_service_textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

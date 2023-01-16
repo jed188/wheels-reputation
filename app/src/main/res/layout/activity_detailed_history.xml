@@ -132,7 +132,6 @@
         android:layout_marginRight="32dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="74dp"
-        android:background="@drawable/description_background"
         android:text="he was a good driver, he knew how to maintain a bike"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
