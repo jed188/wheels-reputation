@@ -12,6 +12,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.google.android.material.bottomappbar.BottomAppBar;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
@@ -30,6 +32,10 @@ public class Driver_reputation_list extends AppCompatActivity {
 
     Intent intent;
 
+    BottomAppBar bottomAppBar;
+
+    BottomNavigationView bottomNavigationView;
+
     //global_variable globalVariable = (global_variable) this.getApplication();
 
     @Override
@@ -37,11 +43,21 @@ public class Driver_reputation_list extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_driver_reputation_list);
 
+        //declaration of attributes
+
         setTitle("Drivers Reputation");
 
         driver_history_classList = global_variable.getDriver_history_classList();
 
         recyclerReputation = findViewById(R.id.reputataion_list_recyclerView);
+
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+        bottomNavigationView.setBackground(null);
+
+
+
+        //recycle view of the drivers reputstion
 
         recyclerReputation.setHasFixedSize(true);
 
@@ -99,8 +115,8 @@ public class Driver_reputation_list extends AppCompatActivity {
         super.onOptionsItemSelected(item);
 
         switch (item.getItemId()){
-            case R.id.username:
-                // define the username of the user and set text to his name
+            case R.id.StolenBike:
+                // the stolen bike activity
 
                 intent = new Intent(this,login_Activity.class);
 
@@ -108,8 +124,8 @@ public class Driver_reputation_list extends AppCompatActivity {
 
                 return true;
 
-            case R.id.add_something:
-                //send to an activity with a compsed window to choose between the 3 toggle options
+            case R.id.drivers_rating:
+                //the reputation activity
 
                 intent = new Intent(this,Add_something.class);
 
@@ -117,13 +133,14 @@ public class Driver_reputation_list extends AppCompatActivity {
 
                 return true;
 
-            case R.id.search:
+            case R.id.spare_part:
+                //activity to sell part
 
                 intent = new Intent(this,MainActivity.class);
 
                 startActivity(intent);
 
-            case R.id.logout:
+            case R.id.mecanic_orkshop:
                 //logs the user out
 
                 return true;

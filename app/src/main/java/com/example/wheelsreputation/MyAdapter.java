@@ -41,16 +41,6 @@ public class MyAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter
 
         holder.history_resume.setText(driver_history_classList.get(position).getDescription());
 
-        holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(context,detailed_history.class);
-
-                context.startActivity(intent);
-
-            }
-        });
 
     }
 

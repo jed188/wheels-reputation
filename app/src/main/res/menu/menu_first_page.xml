@@ -3,19 +3,29 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/username"
-        android:title="@string/username" />
+        android:id="@+id/StolenBike"
+        android:title="Stolen Bike"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/stolen_bike"/>
     <item
-        android:id="@+id/add_something"
-        android:title="@string/add_a_driver_bike_review" />
+        android:id="@+id/drivers_rating"
+        android:title="Rating"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/bikers_icon"/>
     <item
-        android:id="@+id/logout"
-        android:title="@string/log_out" />
+        android:id="@+id/place_holder"
+        android:title=" "
+        app:showAsAction="ifRoom"
+        android:enabled="false"/>
     <item
-
-        android:title="Search"
-        android:id="@+id/search"
-        android:icon="@drawable/ic_search"
+        android:id="@+id/spare_part"
+        android:title="Spares"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/spare_part"/>
+    <item
+        android:id="@+id/mecanic_orkshop"
+        android:title="WorkShop"
+        android:icon="@drawable/workshops"
         app:showAsAction="ifRoom" />
 
 

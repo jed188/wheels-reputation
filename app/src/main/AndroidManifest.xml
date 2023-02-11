@@ -13,9 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WHEELSREPUTATION">
         <activity
-            android:name=".detailed_history"
-            android:exported="false" />
-        <activity
             android:name=".registration_screen_2"
             android:exported="false" />
         <activity
