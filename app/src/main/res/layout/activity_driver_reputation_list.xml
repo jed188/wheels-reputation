@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_resource"
     tools:context=".Driver_reputation_list">
 
+<!--
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout1"
         android:layout_width="match_parent"
-        android:layout_height="602dp"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
+      <TextView
             android:id="@+id/reputation_list_textView"
             android:layout_width="409dp"
             android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/reputataion_list_recyclerView"
-            android:layout_width="407dp"
+            android:layout_width="397dp"
             android:layout_height="0dp"
             android:layout_marginBottom="16dp"
             android:layout_marginEnd="8dp"
@@ -60,6 +60,18 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+        -->
+
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton2"
@@ -77,19 +89,18 @@
         app:fabCradleMargin="8dp"
         app:fabCradleRoundedCornerRadius="10dp"
         app:fabCradleVerticalOffset="5dp"
-        >
+        app:hideOnScroll="true">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            app:menu="@menu/menu_first_page"
-            app:itemIconSize="30dp"
-            app:labelVisibilityMode="labeled"
             android:layout_marginRight="18dp"
+            android:background="@android:color/transparent"
+            app:itemIconSize="30dp"
             app:itemRippleColor="@android:color/transparent"
-            />
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_first_page" />
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 

@@ -2,28 +2,29 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item
-        android:id="@+id/StolenBike"
-        android:title="Stolen Bike"
-        app:showAsAction="ifRoom"
-        android:icon="@drawable/stolen_bike"/>
-    <item
-        android:id="@+id/drivers_rating"
+        android:id="@+id/drivers_rating_navigation"
         android:title="Rating"
         app:showAsAction="ifRoom"
         android:icon="@drawable/bikers_icon"/>
     <item
-        android:id="@+id/place_holder"
+        android:id="@+id/find_Driver_navigation"
+        android:title="Find Driver"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_search"/>
+    <item
+        android:id="@+id/place_holder_navigation"
         android:title=" "
         app:showAsAction="ifRoom"
         android:enabled="false"/>
     <item
-        android:id="@+id/spare_part"
+        android:id="@+id/spare_part_navigation"
         android:title="Spares"
         app:showAsAction="ifRoom"
         android:icon="@drawable/spare_part"/>
     <item
-        android:id="@+id/mecanic_orkshop"
+        android:id="@+id/mecanic_orkshop_navigation"
         android:title="WorkShop"
         android:icon="@drawable/workshops"
         app:showAsAction="ifRoom" />

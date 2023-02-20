@@ -1,135 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeView"
+    android:id="@+id/find_driver_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_resource"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/findDriverButton"
-        android:layout_width="137dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
-        android:layout_marginTop="13dp"
-        android:onClick="find_driver"
-        android:text="@string/find_driver"
-        android:textColor="@color/black"
-        app:backgroundTint="#FBD04F"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="354dp"
-        android:layout_height="54dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="238dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="237dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:ems="10"
-            android:hint="@string/type_here"
-            android:inputType="textPersonName"
+
+        <Button
+            android:id="@+id/findDriverButton"
+            android:layout_width="137dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="13dp"
+            android:onClick="find_driver"
+            android:text="@string/find_driver"
             android:textColor="@color/black"
-            android:textColorHint="#9F9A78" />
+            app:backgroundTint="#FBD04F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <Button
+            android:id="@+id/button_reputation_list"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="98dp"
+            android:layout_margin="3dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/belleza"
+            android:onClick="driverReputationMethod"
+            android:text="@string/driver_list1"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="?android:attr/colorPressedHighlight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button_stolen_bike"
+            app:layout_constraintTop_toBottomOf="@+id/findDriverButton" />
+
+
+        <Button
+            android:id="@+id/button_stolen_bike"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="98dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/belleza"
+            android:onClick="stolenBikeMethod"
+            android:text="@string/stolen_bike"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="?android:attr/colorPressedHighlight"
+            app:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_reputation_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/findDriverButton" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="354dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="238dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="237dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:ems="10"
+                android:hint="@string/type_here"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="#9F9A78" />
+
+            <TextView
+                android:id="@+id/driverNameTextView"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center"
+                android:text="@string/driver_s_name"
+                android:textColor="#006064"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
 
         <TextView
-            android:id="@+id/driverNameTextView"
-            android:layout_width="117dp"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
+            android:id="@+id/textView"
+            android:layout_width="287dp"
+            android:layout_height="90dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
-            android:text="@string/driver_s_name"
-            android:textColor="#006064"
-            android:textSize="16sp" />
-    </RelativeLayout>
+            android:text="INFLUENCE"
+            android:textColor="@color/material_on_primary_emphasis_medium"
+            android:textSize="56sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
-        android:id="@+id/button_reputation_list"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="0dp"
-        android:layout_height="98dp"
-        android:layout_margin="3dp"
-        android:layout_marginEnd="16dp"
-
-        android:layout_marginLeft="3dp"
-        android:layout_marginRight="16dp"
-
-        android:layout_marginStart="3dp"
-        android:background="@drawable/button_background"
-        android:fontFamily="@font/belleza"
-        android:onClick="driverReputationMethod"
-        android:text="@string/driver_list1"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:backgroundTint="?android:attr/colorPressedHighlight"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button_stolen_bike"
-        app:layout_constraintTop_toBottomOf="@+id/findDriverButton" />
-
-    <Button
-        android:id="@+id/button_stolen_bike"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="0dp"
-        android:layout_height="98dp"
-        android:layout_margin="3dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_weight="1"
-        android:background="@drawable/button_background"
-        android:fontFamily="@font/belleza"
-        android:onClick="stolenBikeMethod"
-        android:text="@string/stolen_bike"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:backgroundTint="?android:attr/colorPressedHighlight"
-        app:elevation="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button_reputation_list"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/findDriverButton" />
-
-
-
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="287dp"
-        android:layout_height="90dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:gravity="center"
-        android:text="INFLUENCE"
-        android:textColor="@color/material_on_primary_emphasis_medium"
-        android:textSize="56sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
