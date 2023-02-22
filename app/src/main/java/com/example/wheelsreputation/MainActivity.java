@@ -13,21 +13,26 @@ import android.widget.Button;
 
 public class MainActivity extends Fragment {
 
-    Intent intent;
+    Intent intent,intent2,intent1 ;
     Button stolenBikeButton, driverReputationButton;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        return inflater.inflate(R.layout.activity_main, container,false);
+
+        View view = inflater.inflate(R.layout.activity_main, container,false);
+
+
+        stolenBikeButton = view.findViewById(R.id.button_stolen_bike);
+        driverReputationButton = view.findViewById(R.id.button_reputation_list);
+
+
+        return view;
 
     }
 
     @Override
     public void onStart() {
         super.onStart();
-
-        stolenBikeButton = getView().findViewById(R.id.button_stolen_bike);
-        driverReputationButton = getView().findViewById(R.id.button_reputation_list);
 
 
 
@@ -37,57 +42,10 @@ public class MainActivity extends Fragment {
          */
     }
 
-    public void find_driver(View view){
-
-        intent = new Intent(getActivity(),Find_driver_activity.class);
-
-        startActivity(intent);
-
-    }
-
-    public void stolenBikeMethod(View view){
-
-        intent = new Intent(getActivity(),Stolen_bike_list.class);
-
-        startActivity(intent);
-
-    }
-
-
-    public void driverReputationMethod(View view){
-
-        intent = new Intent(getActivity(),driver_reps_first.class);
-
-        startActivity(intent);
-
-    }
-
-
-    public void shareApkFile () {
-
-        //how to send apk file to another device and recreate the app
-
-        // Get current ApplicationInfo to find .apk path
-     /*   ApplicationInfo app = getApplicationContext().getApplicationInfo();
-        String filePath = app.sourceDir;
-
-        Intent intent = new Intent(Intent.ACTION_SEND);
-
-// MIME of .apk is "application/vnd.android.package-archive".
-// but Bluetooth does not accept this. Let's use "*1/*" instead.
-        intent.setType("*1/*");
-
-// Only use Bluetooth to send .apk
-        intent.setPackage("com.android.bluetooth");
-
-// Append file and send Intent
-        intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(filePath)));
-        startActivity(Intent.createChooser(intent, "Share app"));
 
 
 
-      */
-    }
+
 
 
 }

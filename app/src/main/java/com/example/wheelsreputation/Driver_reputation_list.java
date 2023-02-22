@@ -9,16 +9,20 @@ import androidx.recyclerview.widget.RecyclerView.Adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.io.File;
 import java.util.List;
 
 public class Driver_reputation_list extends AppCompatActivity {
@@ -27,20 +31,15 @@ public class Driver_reputation_list extends AppCompatActivity {
 
     RecyclerView recyclerReputation;
 
-    Adapter mAdapterReputation;
-
-    RecyclerView.LayoutManager layoutManagerReputation;
-
     FloatingActionButton add_driver;
 
-    Intent intent;
+    Intent intent,intent1,intent2;
+
+    Button stolenBikeButton, driverReputationButton;
 
     FrameLayout find_driver_layout;
 
     BottomNavigationView bottomNavigationView;
-
-
-    //global_variable globalVariable = (global_variable) this.getApplication();
 
 
     @SuppressLint("NonConstantResourceId")
@@ -52,6 +51,7 @@ public class Driver_reputation_list extends AppCompatActivity {
         //declaration of attributes
 
         setTitle("Drivers Reputation");
+
 
 
         getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout1,new driver_reps_first()).commit();
@@ -85,7 +85,7 @@ public class Driver_reputation_list extends AppCompatActivity {
 
                 case R.id.spare_part_navigation:
 
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout1,new add_something_review_Fragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout1,new Spares_Fragment()).commit();
                     return true;
 
                 case R.id.mecanic_orkshop_navigation:
@@ -98,20 +98,6 @@ public class Driver_reputation_list extends AppCompatActivity {
         });
 
 
-        //recycle view of the drivers reputation
-/*
-        recyclerReputation.setHasFixedSize(true);
-
-        layoutManagerReputation = new LinearLayoutManager(getApplicationContext());
-
-        recyclerReputation.setLayoutManager(layoutManagerReputation);
-
-        mAdapterReputation = new adapter_reputation_list(getApplicationContext() , driver_history_classList);
-
-        recyclerReputation.setAdapter(mAdapterReputation);
-
-
- */
 
         //floating button
 
@@ -126,6 +112,8 @@ public class Driver_reputation_list extends AppCompatActivity {
 
     }
 
+        //onclick methods for buttons
+
     public void stolenBikeMethod(View view){
 
         intent = new Intent(getApplicationContext() , Stolen_bike_list.class);
@@ -134,15 +122,24 @@ public class Driver_reputation_list extends AppCompatActivity {
 
     }
 
-
-
     public void find_driver(View view){
 
-        intent = new Intent(getApplicationContext() , MainActivity.class);
+        intent1 = new Intent(getApplicationContext(),Find_driver_activity.class);
 
-        startActivity(intent);
+        startActivity(intent1);
 
     }
+
+    public void driverReputationMethod(View view){
+
+        intent2 = new Intent(getApplicationContext(),Driver_reputation_list.class);
+
+        startActivity(intent2);
+
+    }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -189,6 +186,14 @@ public class Driver_reputation_list extends AppCompatActivity {
 
                 return true;
 
+            case R.id.share_menu:
+                //distribute the application
+
+                shareApkFile ();
+
+                return true;
+
+
             case R.id.driver_review_menu:
                 //add a review and an extra to drop in the right page
 
@@ -220,4 +225,32 @@ public class Driver_reputation_list extends AppCompatActivity {
                 return false;
         }
     }
+
+
+    //share my app code
+
+    public void shareApkFile () {
+
+        //how to send apk file to another device and recreate the app
+
+        // Get current ApplicationInfo to find .apk path
+        ApplicationInfo app = getApplicationContext().getApplicationInfo();
+        String filePath = app.sourceDir;
+
+        Intent intent = new Intent(Intent.ACTION_SEND);
+
+// MIME of .apk is "application/vnd.android.package-archive".
+// but Bluetooth does not accept this. Let's use "*1/*" instead.
+        intent.setType("*1/*");
+
+// Only use Bluetooth to send .apk
+        intent.setPackage("com.android.bluetooth");
+
+// Append file and send Intent
+        intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(filePath)));
+        startActivity(Intent.createChooser(intent, "Share app"));
+
+
+    }
+
 }
