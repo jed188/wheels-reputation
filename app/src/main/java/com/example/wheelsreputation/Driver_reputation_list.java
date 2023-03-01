@@ -2,6 +2,7 @@ package com.example.wheelsreputation;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,6 +12,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -42,6 +44,7 @@ public class Driver_reputation_list extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
 
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -81,6 +84,7 @@ public class Driver_reputation_list extends AppCompatActivity {
                 case R.id.drivers_rating_navigation:
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout1,new driver_reps_first()).commit();
+
                     return true;
 
                 case R.id.spare_part_navigation:
@@ -90,7 +94,7 @@ public class Driver_reputation_list extends AppCompatActivity {
 
                 case R.id.mecanic_orkshop_navigation:
 
-                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout1,new add_something_driver_Fragment()).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout1,new Workshop_Maps_Fragment()).commit();
                     return true;
             }
 

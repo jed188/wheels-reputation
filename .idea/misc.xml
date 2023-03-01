@@ -25,6 +25,7 @@
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/inpu_bg.xml" value="0.2203125" />
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/input_background_1.xml" value="0.1" />
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/tab_indicator_top.xml" value="0.2203125" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/drawable/worksshop_icon_map.xml" value="0.2169230769230769" />
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_add_something.xml" value="0.1" />
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_available_driver_list.xml" value="0.67" />
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/activity_detailed_history.xml" value="0.25" />
@@ -45,6 +46,7 @@
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/fragment_first.xml" value="0.25" />
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/fragment_owner_login_.xml" value="0.25" />
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/fragment_spares_.xml" value="0.33" />
+        <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/fragment_workshop__maps_.xml" value="0.1" />
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/history_layout.xml" value="0.33" />
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/linear_layout_options.xml" value="0.33" />
         <entry key="..\:/Users/JEDIDIA/AndroidStudioProjects/WHEELSREPUTATION/app/src/main/res/layout/reputation_list_layout.xml" value="0.33" />
