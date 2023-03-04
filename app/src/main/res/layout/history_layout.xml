@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/history_constraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/detailed_history_list_shape">
+    android:background="@drawable/history_background"
+
+    android:layout_marginBottom="20dp"
+    android:layout_height="wrap_content">
 
     <RatingBar
         android:id="@+id/ratingBar3"
@@ -49,9 +51,8 @@
         android:id="@+id/owner_name_textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Owner Name: "
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/history_resume" />
@@ -60,7 +61,7 @@
         android:id="@+id/owner_name_value_textView_add_stolen_bike3"
         android:layout_width="0dp"
         android:layout_height="19dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Jedidia"
         android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/owner_name_textView2"
@@ -115,12 +116,10 @@
         android:layout_width="362dp"
         android:layout_height="0dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:textStyle="italic"
+        android:layout_marginTop="24dp"
         android:text="he was a good driver and only left because thebike broke and we couldnt fix timeously"
+        android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -5,7 +5,7 @@
     android:id="@+id/find_driver_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_resource"
+
     tools:context=".MainActivity">
 
 
@@ -107,7 +107,7 @@
 
             <TextView
                 android:id="@+id/driverNameTextView"
-                android:layout_width="117dp"
+                android:layout_width="91dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
@@ -130,7 +130,7 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center"
             android:text="INFLUENCE"
-            android:textColor="@color/material_on_primary_emphasis_medium"
+            android:textColor="#C1C3DCD8"
             android:textSize="56sp"
             android:textStyle="italic"
             app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
