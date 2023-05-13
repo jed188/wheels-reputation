@@ -1,7 +1,6 @@
 package com.example.wheelsreputation;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,13 +13,13 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-public class MyAdapter extends androidx.recyclerview.widget.RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+public class adapter_driver_history extends androidx.recyclerview.widget.RecyclerView.Adapter<adapter_driver_history.MyViewHolder> {
 
     List<driver_history_class> driver_history_classList;
 
     Context context;
 
-    public MyAdapter(List<driver_history_class> driver_history_classList , Context context) {
+    public adapter_driver_history(List<driver_history_class> driver_history_classList , Context context) {
         this.driver_history_classList = driver_history_classList;
         this.context = context;
     }

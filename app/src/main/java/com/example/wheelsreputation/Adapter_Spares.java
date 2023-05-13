@@ -12,12 +12,12 @@ import java.util.List;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class SparesAdapter extends RecyclerView.Adapter<SparesAdapter.MyViewHolder> {
+public class Adapter_Spares extends RecyclerView.Adapter<Adapter_Spares.MyViewHolder> {
 
     List<spare_parts_class> spare_parts_class1;
     Context context;
 
-    public SparesAdapter(List<spare_parts_class> spare_parts_class1 , Context context) {
+    public Adapter_Spares(List<spare_parts_class> spare_parts_class1 , Context context) {
         this.spare_parts_class1 = spare_parts_class1;
         this.context = context;
     }

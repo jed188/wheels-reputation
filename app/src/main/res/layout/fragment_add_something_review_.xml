@@ -155,6 +155,8 @@
         app:layout_constraintStart_toEndOf="@+id/surname_driver_textView2"
         app:layout_constraintTop_toBottomOf="@+id/owner_name_value_textView_add_stolen_bike2" />
 
+
+
     <EditText
         android:id="@+id/beginning_service_value_textView3"
         android:layout_width="127dp"

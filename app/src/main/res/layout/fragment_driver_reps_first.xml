@@ -44,19 +44,17 @@
     app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/reputataion_list_recyclerView"
-    android:layout_width="397dp"
-    android:layout_height="0dp"
-    android:layout_marginBottom="16dp"
-    android:layout_marginEnd="8dp"
-    android:layout_marginLeft="8dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="8dp"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/reputation_list_textView" />
+            android:id="@+id/reputataion_list_recyclerView"
+            android:layout_width="397dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="46dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/reputation_list_textView" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

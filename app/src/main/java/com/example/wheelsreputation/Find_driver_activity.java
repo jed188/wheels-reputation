@@ -3,17 +3,13 @@ package com.example.wheelsreputation;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.RecyclerView.Adapter;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Find_driver_activity extends AppCompatActivity {
@@ -54,7 +50,7 @@ public class Find_driver_activity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new MyAdapter(driver_history_classList,this);
+        mAdapter = new adapter_driver_history(driver_history_classList,this);
 
         recyclerView.setAdapter(mAdapter);
 

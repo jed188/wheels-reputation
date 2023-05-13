@@ -7,7 +7,7 @@
         android:id="@+id/drivers_rating_navigation"
         android:title="Rating"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/bikers_icon"/>
+        android:icon="@drawable/mobile_mecanic"/>
     <item
         android:id="@+id/find_Driver_navigation"
         android:title="Find Driver"

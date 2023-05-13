@@ -38,7 +38,7 @@ public class Spares_Fragment extends Fragment {
          recyclerView_spares.setHasFixedSize(true);
          sparesLayoutManager = new LinearLayoutManager(getActivity());
          recyclerView_spares.setLayoutManager(sparesLayoutManager);
-         sparesAdapter = new SparesAdapter(spare_parts_class1,getContext());
+         sparesAdapter = new Adapter_Spares(spare_parts_class1,getContext());
          recyclerView_spares.setAdapter(sparesAdapter);
 
          return view;

@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout_reputation_list"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="401dp"
-        android:layout_height="209dp"
+        android:layout_width="408dp"
+        android:layout_height="252dp"
         android:layout_marginBottom="5dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -26,12 +24,23 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <Button
+                android:id="@+id/advert_button_reputation_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Button"
+                app:backgroundTint="#EDA63D"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/advert_ratingBar_reputation_list2" />
+
             <RatingBar
-                android:id="@+id/ratingBar_reputation_list"
+                android:id="@+id/advert_ratingBar_reputation_list2"
                 style="@style/Widget.AppCompat.RatingBar.Small"
                 android:layout_width="80dp"
-                android:layout_height="18dp"
-                android:layout_marginBottom="16dp"
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="45dp"
                 android:layout_marginTop="16dp"
                 android:progressBackgroundTint="#CC373535"
@@ -39,18 +48,31 @@
                 android:rating="0.0"
                 android:scaleX="1.5"
                 android:scaleY="1.5"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardView" />
 
             <TextView
-                android:id="@+id/driver_name_reputation_list"
+                android:id="@+id/advert_description_reputation_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="15dp"
+                android:maxHeight="90dp"
+                android:maxWidth="205dp"
+                android:text="Tygervalley was the proper place to test tthe max width parameter"
+                android:textColor="#97689F"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/advert_title_reputation_list" />
+
+            <TextView
+                android:id="@+id/advert_title_reputation_list"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="32dp"
-                android:maxWidth="200dp"
+                android:layout_marginTop="20dp"
                 android:text="Mohamed Brahi"
                 android:textColor="#9C27B0"
                 android:textSize="34sp"
@@ -58,21 +80,6 @@
                 app:layout_constraintEnd_toStartOf="@+id/cardView"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/location_reputation_list"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="15dp"
-                android:maxHeight="85dp"
-                android:maxWidth="205dp"
-                android:text="Tygervalley"
-                android:textColor="#97689F"
-                android:textSize="22sp"
-                android:textStyle="italic"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/driver_name_reputation_list" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardView"
@@ -87,7 +94,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
-                    android:id="@+id/imageView_reputation_list"
+                    android:id="@+id/advert_imageView_reputation_list"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:srcCompat="@drawable/reputation_sticker" />
